@@ -1,0 +1,27 @@
+
+#Karen1 {
+    /* Keep the image's aspect ratio, limit its height and width so it doesn't take over the page */
+    max-width: 45%;       /* don't be wider than 45% of the container */
+    width: auto;          /* let width scale automatically */
+    height: auto;         /* preserve aspect ratio */
+    max-height: 100vh;     /* limit height relative to viewport */
+    display: block;
+    object-fit: cover;    /* crop a bit if needed while preserving aspect ratio */
+    /* optional subtle gradient mask if you still want the fade effect */
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
+}
+
+#HomeId{
+    display: flex;
+    gap: 0;
+    margin: 0;
+    align-items: center;        /* vertically center text and image */
+    justify-content: space-between; /* push the image to the right */
+    width: 100%;
+}
+
+#FindTitle{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #0F1B31
+}
