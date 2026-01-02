@@ -1,5 +1,6 @@
 import App from "./App";
 import Home from "./Pages/Home";
+import HousePage from "./Pages/HousePage";
 
 const routes = [
     {Path:"/",
@@ -8,7 +9,8 @@ const routes = [
         {
             path:"/",
             element:<Home />,
-        }
+        },
+        {path:"/houses/:id", element:<HousePage />}
     ]
     },
 ]
