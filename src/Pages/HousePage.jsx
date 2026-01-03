@@ -61,7 +61,7 @@ const HousePage = () => {
           <p className="text-gray-500 text-sm">{location}</p>
         </div>
         <div className="text-right">
-          <p className="text-2xl font-bold text-black">{price} <span className="text-sm font-normal text-gray-500">/ month</span></p>
+          <p className="text-2xl font-bold text-black">{price} </p>
         </div>
       </div>
 
@@ -69,15 +69,13 @@ const HousePage = () => {
         {/* Main Content Area */}
         <div className="lg:col-span-2">
           {/* Image Gallery */}
-          <div className="relative rounded-lg overflow-hidden bg-gray-200 h-[400px]">
+          <div className="relative rounded-lg overflow-hidden bg-gray-200 h-[700px]">
             {mainImage ? (
               <img src={mainImage} alt="Property" className="w-full h-full object-cover" />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-gray-500">No image available</div>
             )}
-            <button className="absolute top-4 right-4 bg-white/80 p-2 rounded-full shadow-sm text-sm flex items-center gap-1">
-              ❤️ Add to favourites
-            </button>
+           
           </div>
 
           {/* Thumbnails */}
@@ -115,29 +113,19 @@ const HousePage = () => {
             <div className="text-gray-600 space-y-4 leading-relaxed whitespace-pre-line">
               {description}
             </div>
-            <button className="text-blue-600 font-semibold mt-4 hover:underline">Read more</button>
+           
           </div>
         </div>
 
         {/* Sidebar */}
         <div className="lg:col-span-1">
           <div className="sticky top-4 bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
-            <div className="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-              {agent.logo ? (
-                <img src={agent.logo} alt="Agent" className="w-10 h-10 object-contain" />
-              ) : (
-                <div className="text-sm text-gray-500">No agent</div>
-              )}
-            </div>
-            <h3 className="text-blue-600 font-medium mb-6 hover:underline cursor-pointer">{agent.name}</h3>
-
-            <button className="w-full border border-green-500 text-green-600 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-green-50 transition mb-4">
+            
+            <a href='https://api.whatsapp.com/send?phone=254759079648' target='_blank'> <button  className="w-full border border-green-500 text-green-600 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-green-50 transition mb-4" > 
               💬 WhatsApp
-            </button>
-
-            <button className="w-full text-red-500 text-sm flex items-center justify-center gap-1 hover:underline">
-              🚩 Report
-            </button>
+            </button></a>
+            <h3 className="w-full border border-red-500 text-red-600 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 hover:bg-red-50 transition mb-4"> 📞+254 759 079 648</h3>
+            
           </div>
         </div>
 
