@@ -19,7 +19,7 @@ function HouseCard({price,title,location,bed,bath,size,thumbnail,id,images,descr
         <div className="rectangle-2" />
 
         <div className="text-wrapper-4">
-            <img className='vector' alt='vector' src='https://res.cloudinary.com/dvgbwrvl1/image/upload/v1767188561/Screenshot_2025-12-31_164223_x7k4oe.png' width='20px'></img>
+            <p>📐</p>
         </div>
 
         <div className="text-wrapper-5">{bed} Bed</div>
@@ -27,11 +27,11 @@ function HouseCard({price,title,location,bed,bath,size,thumbnail,id,images,descr
         <div className="text-wrapper-6">{size}</div>
 
         <div className="mdi-bed">
-          <img className="vector" alt="Vector" src="https://res.cloudinary.com/dvgbwrvl1/image/upload/v1767187707/1021592-200_nwciti.png" />
+          <p>🛏️</p>
         </div>
 
         <div className="text-wrapper-7">
-            <img className='vector' alt='vector' src="https://res.cloudinary.com/dvgbwrvl1/image/upload/v1767187983/shower-icon-bathroom-symbol-vector-5575836_tdu1qj.jpg" width="15px"></img>
+            <p>🚿</p>
         </div>
 
         <div className="text-wrapper-8">{bath} Bath</div>

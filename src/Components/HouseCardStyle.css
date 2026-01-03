@@ -15,9 +15,9 @@
 .box .rectangle {
   background: linear-gradient(
     151deg,
-    rgba(0, 152, 91, 1) 0%,
-    rgba(0, 152, 91, 1) 51%,
-    rgba(0, 0, 0, 1) 100%
+    rgb(0, 51, 152) 0%,
+    #082357 51%,
+    #0F1B31 100%
   );
   border-radius: 5px;
   box-shadow: 0px 20px 20px #00000040;
