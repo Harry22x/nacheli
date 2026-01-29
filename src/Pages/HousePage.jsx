@@ -8,8 +8,7 @@ const HousePage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Load the JSON and select the house with matching id.
-    // public/db.json is available at /db.json when served by Vite/dev server.
+ 
     setLoading(true);
     fetch('/db.json')
       .then(res => {
@@ -18,7 +17,7 @@ const HousePage = () => {
       })
       .then(data => {
         const houses = Array.isArray(data.houses) ? data.houses : [];
-        // match numeric or string id
+        
         const found = houses.find(h => String(h.id) === String(id));
         setPropertyData(found || null);
       })
@@ -29,7 +28,7 @@ const HousePage = () => {
       .finally(() => setLoading(false));
   }, [id]);
 
-  // Initialize mainImage when propertyData appears
+  
   useEffect(() => {
     if (propertyData && Array.isArray(propertyData.images) && propertyData.images.length > 0) {
       setMainImage(propertyData.images[0]);
@@ -41,7 +40,6 @@ const HousePage = () => {
   if (loading) return <div className="p-8">Loading property...</div>;
   if (!propertyData) return <div className="p-8">Property not found.</div>;
 
-  // Safe access / fallback values
   const title = propertyData.title || 'Untitled Property';
   const price = propertyData.price || '';
   const location = propertyData.location || '';
